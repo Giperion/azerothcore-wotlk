@@ -33,6 +33,14 @@ set(CMAKE_INSTALL_RPATH_USE_LINK_PATH 1)
 
 set(AC_PATH_ROOT "${CMAKE_SOURCE_DIR}")
 
+if (WIN32)
+  # Added by Giperion, in WIN32 output all compiled files in one directory
+  set( CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin )
+  set( CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/lib )
+  # Allow creating folders in solution
+  set_property(GLOBAL PROPERTY USE_FOLDERS ON)
+endif()
+
 # set macro-directory
 list(APPEND CMAKE_MODULE_PATH
         "${CMAKE_SOURCE_DIR}/src/cmake/macros")
