@@ -83,6 +83,9 @@ local.properties
 .project
 .cproject
 
+# Giperion build folder
+/Solution/*
+
 
 # ==================
 #
