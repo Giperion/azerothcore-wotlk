@@ -38,6 +38,7 @@ IF(PLATFORM EQUAL 64)
     "C:/OpenSSL-Win64/"
     "C:/OpenSSL/"
     "C:/Program Files/OpenSSL-Win64/"
+	"D:/Programs/OpenSSL-1.1-Win64/"
   )
 ELSE()
   SET(_OPENSSL_ROOT_PATHS
